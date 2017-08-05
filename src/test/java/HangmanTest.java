@@ -22,4 +22,10 @@ public class HangmanTest{
    assertEquals(outPutNumber,hangman.IndexOfLetter("a"));
  }
 
+ @Test
+  public void hangman_checkIfTheLetterPutInMatchesItsCorrespondingstring_true(){
+    Hangman hangman = new Hangman();
+    assertEquals(true,hangman.checkIfTheLetterMatches("pan"));
+  }
+
 }
