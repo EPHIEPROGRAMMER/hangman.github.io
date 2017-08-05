@@ -10,19 +10,19 @@ public class HangmanTest{
   }
 
   @Test
- public void hangman_isLetterContainedinWord_false(){
-   Hangman hangman = new Hangman();
-   assertEquals(false,hangman.HangmanLetterToBeChecked("z"));
- }
+  public void hangman_isLetterContainedinWord_false(){
+    Hangman hangman = new Hangman();
+    assertEquals(false,hangman.HangmanLetterToBeChecked("z"));
+  }
 
- @Test
- public void hangman_IndexOfLetterInResidualString_1(){
-   Hangman hangman = new Hangman();
-   Integer outPutNumber = 1;
-   assertEquals(outPutNumber,hangman.IndexOfLetter("a"));
- }
+  @Test
+  public void hangman_IndexOfLetterInResidualString_1(){
+    Hangman hangman = new Hangman();
+    Integer outPutNumber = 1;
+    assertEquals(outPutNumber,hangman.IndexOfLetter("a"));
+  }
 
- @Test
+  @Test
   public void hangman_checkIfTheLetterPutInMatchesItsCorrespondingstring_true(){
     Hangman hangman = new Hangman();
     assertEquals(true,hangman.checkIfTheLetterMatches("pan"));
@@ -35,11 +35,11 @@ public class HangmanTest{
   }
 
   @Test
- public void hangman_changeWordThatIsBeingPlayed_1(){
-   Hangman hangman = new Hangman();
-   Integer outPutNumber = 1;
-   assertEquals(outPutNumber,hangman.changeWordThatIsBeingPlayed());
+  public void hangman_changeWordThatIsBeingPlayed_1(){
+    Hangman hangman = new Hangman();
+    Integer outPutNumber = 1;
+    assertEquals(outPutNumber,hangman.changeWordThatIsBeingPlayed());
 
- }
+  }
 
 }
