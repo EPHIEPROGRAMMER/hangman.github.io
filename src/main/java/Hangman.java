@@ -19,5 +19,21 @@ public class Hangman{
       return indexOfTheWordToBeChecked;
     }
 
+    public boolean checkIfTheLetterMatches(String word){
+  String WordToBeChecked =  listOfWords[stringNumberInArray];
+  Boolean doTheWordsMatch = word.equals(WordToBeChecked);
+  return doTheWordsMatch;
+}
+
+public boolean ifWordBeingPlayedIsComplete(String word){
+  String wordBeingPlayed = listOfWords[stringNumberInArray];
+  if(wordBeingPlayed.equals(word)){
+    stringNumberInArray+=1;
+    return true;
+  }else{
+    return false;
+  }
+}
+
 
 }
