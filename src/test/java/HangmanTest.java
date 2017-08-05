@@ -28,4 +28,10 @@ public class HangmanTest{
     assertEquals(true,hangman.checkIfTheLetterMatches("pan"));
   }
 
+  @Test
+  public void hangman_ifWordBeingPlayedIsComplete_true(){
+    Hangman hangman = new Hangman();
+    assertEquals(true,hangman.ifWordBeingPlayedIsComplete("pan"));
+  }
+
 }
